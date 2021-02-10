@@ -17,11 +17,11 @@
         "execute": {
            "inArguments":[
 				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
+                    "emailAddress": "{{InteractionDefaults.Emai}}"
                 }									
 			],
           "outArguments": [],
-          "url": "https://<your-domain-here>/journeybuilder/execute",
+          "url": "https://sf-mc-twilio-sms-x.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -31,24 +31,24 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "9b5347ab-9400-4a54-bdb5-6758ab2156cc",
+      "applicationExtensionKey": "44165ab8-b99e-44a7-98f9-bab6f6711750",
       "save": {
-        "url": "https://sf-mc-custom-activity-c20y.herokuapp.com/journeybuilder/save",
+        "url": "https://sf-mc-twilio-sms-x.herokuapp.com/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://sf-mc-custom-activity-c20y.herokuapp.com/journeybuilder/publish",
+        "url": "https://sf-mc-twilio-sms-x.herokuapp.com/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://sf-mc-custom-activity-c20y.herokuapp.com/journeybuilder/stop",
+        "url": "https://sf-mc-twilio-sms-x.herokuapp.com/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https://sf-mc-custom-activity-c20y.herokuapp.com/journeybuilder/validate",
+        "url": "https://sf-mc-twilio-sms-x.herokuapp.com/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }
